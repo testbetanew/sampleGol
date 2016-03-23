@@ -18,3 +18,5 @@ build:
   ci:
     - go version
     - if [ "$SHIPPABLE_GO_VERSION" == "1.3" ]; then foobar; fi
+    
+    
