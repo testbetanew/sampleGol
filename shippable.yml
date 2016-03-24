@@ -13,6 +13,8 @@ env:
     - test=foo
     - secure: ze58HSsKZu91vLaceIa2vLJP52t8LFLbgFgQx0g3xBUlmOKYwmUodPbOiy0vOJ6SBPbQqVuUXiP9+PAvFLGQ8r1MJbMVHhINdVr/tl6LJo60hsNVQUqZVCrKiOQUK3vuTP8uRdT3OmUvjS78b09upi23gj83V4EiIjjhYLoTP+lxzPJT4lwUHvnyetvOBiO8VkrwzZ6QHDV4eGHbAl+VYV+HA3TfXamvm+xPDTo+HjnXVSgpdrqQCkCp5ZSu95au22T7RjkcrJthxjJBB+NkhsuOuyz/F5xXVNi5DQ6jPtXXGSO4UL1bDCsG4NN+sSkp3cWebuBKv5lKwH1sUnBvIw==
   matrix: 
+    - secure: ZRU/GjBR16METpMd9A1KJgPmdhx0ukz/TzFo8VbhbjZy6nnT6cWg997rRSzr42B0Znj5N2SVfazUxmDGYgq21dT5nigvX8vezYdkh0VKkDlVuohKKco1raYssSmqlTl7HEhTM8hakmCaz72ltRC/QceKX+JF2V/2/hoz3Z+DGoYfH27kPDM/TKo0Ce4REt4zh8hd5gHG4bW2qHeNztnQFMDR3lw6QVSXdd7VAp4HTxm1bbtU+9wgmFi3gC22zLqrb8jRuAb8QpxJKIKTP0eICggbQgGLGWSw1ubIRnHKQzkiTvSO0YqmNzzlk9cLjOFM+4Hb7K0X2kpUilP36rETnA==
+
     - m1=one
     - m2=two
 matrix:
@@ -37,7 +39,8 @@ build:
     - echo $m1
     - echo $m2
     - echo $sec
-    - if [ "$SHIPPABLE_GO_VERSION" == "1.3" ]; then foobar; fi
+    - echo $one
+    #- if [ "$SHIPPABLE_GO_VERSION" == "1.3" ]; then foobar; fi
     
     
     
