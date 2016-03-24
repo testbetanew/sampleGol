@@ -18,6 +18,11 @@ env:
 matrix:
   include:
     - go: 1.1
+      env:
+        - m1=one
+    - go: 1.1
+      env:
+        - m2=two    
    
   exclude:
     - go: 1.2
