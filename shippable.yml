@@ -5,7 +5,7 @@ language: go
 # Version number
 go:
   #- 1.1
-  #- 1.2
+  - 1.2
   - 1.3
 env:
   global:
@@ -17,11 +17,11 @@ env:
 matrix:
   include:
     - go: 1.1
+   
+  exclude:
     - go: 1.2
       env:
         - m1=one
-  #exclude:
-   # - go: 1.2
       
   allow_failures:
     - go: 1.3
