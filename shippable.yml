@@ -7,6 +7,9 @@ go:
   #- 1.1
   - 1.2
   - 1.3
+env:
+  - foo=bar
+  - test=foo
 matrix:
   include:
     - go: 1.1
