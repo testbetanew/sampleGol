@@ -25,10 +25,12 @@ matrix:
         - m2=two    
    
   exclude:
-    - go: 1.2
+    - go: 1.3
       env:
         - m1=one
-      
+    - go: 1.3
+      env:
+        - m2=two 
   allow_failures:
     - go: 1.3
 build:
