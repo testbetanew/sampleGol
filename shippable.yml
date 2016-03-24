@@ -8,8 +8,9 @@ go:
   - 1.2
   - 1.3
 env:
-  - foo=bar
-  - test=foo
+  global:
+    - foo=bar
+    - test=foo
 matrix:
   include:
     - go: 1.1
@@ -20,7 +21,7 @@ matrix:
 build:
   ci:
     - go version
-    - if [ "$SHIPPABLE_GO_VERSION" == "1.3" ]; then foobar; fi
+   # - if [ "$SHIPPABLE_GO_VERSION" == "1.3" ]; then foobar; fi
     
     
     
