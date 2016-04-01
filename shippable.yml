@@ -9,26 +9,13 @@ go:
   - 1.3
 env:
   global:
-    - secure: 26CekwzA+4LCVT0NGIUBPPfSvxD17as2gaaujMROqMNu7gl9pYWmvJCYBMzY7mOKVU9yDJREyvwNIBiDJ1n/mudmBrscGjKZ+fUmce7mQp//HBrxEPZoi1s3hXs3kpzCp8BGC0aAhbrI3AffMJp4FXmQporLcHrZiLbN7EMKpF/PFBX5myJPvpgdAd/1jNAprqGFHV6qtQmRw6UTXvpgt+h3GcAds+Z+VX0dmfSD5/vlKJi/xPesWCXY8f8n0DVnX/63L79wxuWvAwTI8Ss7+Cnj+MPvGROXUhjFxIUBRj2DCL8GtDtKCSuiL6pkAkleRI31bPJw80NOx2nZfr5ySQ==tesr
-
+    - secure: JXawHm+LPHn2N0Lfli1Jo06dsT5DuOmwExk+wfxJz8et6z8Ee3Pp9HzwxB62yECDGgNkfiusrykJY9q5Kt3ApGnkLiBJ71p8f7UVEoRMr4CHO+w8+8Zba7LVAizbHmmFcqfdJ9NMAUdhZwoNHdPqXtyD7OlywwTzQoAqG3H5mqSaeC2Slfq4SMgxcVxBO/FyLeJXptdxyUhWQQ6Jwoc8WI/J5aGfPBjKejG3Dd/ZPDXK7vdOLMHKSqdBVmtVSewe/Z/Kl6AuBb2r9LokU3IznRZcjWryjmnOOxktJoLv8zHLZahvLJ0OwsaAUSRjS6JVXXnx7Dluc7cXZJWmx+Pxcg== 
 build:
   ci:
     - go version
     #- if [ "$SHIPPABLE_GO_VERSION" == "1.3" ]; then foobar; fi
     
-integrations:
-  notifications:
-    - integrationName: ship-hipchat-room-user
-      type: hipchat
-      recipients:
-        - '#Private-room'
-            #- '#Pillar%20of%20Autumn'
-        - '@shiphitchcock3'
-      on_start: always
-      on_success: always
-      on_failure: always 
-      
-      
+
       
     
     
