@@ -6,7 +6,7 @@ language: go
 go:
   - 1.1
   - 1.2
-  - 1.3
+  #- 1.3
 #env:
  # global:
   #  - secure: JXawHm+LPHn2N0Lfli1Jo06dsT5DuOmwExk+wfxJz8et6z8Ee3Pp9HzwxB62yECDGgNkfiusrykJY9q5Kt3ApGnkLiBJ71p8f7UVEoRMr4CHO+w8+8Zba7LVAizbHmmFcqfdJ9NMAUdhZwoNHdPqXtyD7OlywwTzQoAqG3H5mqSaeC2Slfq4SMgxcVxBO/FyLeJXptdxyUhWQQ6Jwoc8WI/J5aGfPBjKejG3Dd/ZPDXK7vdOLMHKSqdBVmtVSewe/Z/Kl6AuBb2r9LokU3IznRZcjWryjmnOOxktJoLv8zHLZahvLJ0OwsaAUSRjS6JVXXnx7Dluc7cXZJWmx+Pxcg== 
