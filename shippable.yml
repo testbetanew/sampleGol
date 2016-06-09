@@ -18,13 +18,13 @@ build:
     
     
 
-#integrations:
- # notifications:
-  #   - integrationName: ship-externalwebhook
-   #    type: webhook
-    #   payload:
-     #   - title=Failure - $REPO_FULL_NAME - $BUILD_NUMBER
-      #  - body=Shippable Run $BUILD_NUMBER ($BUILD_URL) failed for $COMPARE_URL
+integrations:
+  notifications:
+     - integrationName: ship-postcitrigger
+       type: webhook
+       payload:
+        - API_URL=$SHIPPABLE_API_URL
+        - CONTAINER_NAME=$SHIPPABLE_CONTAINER_NAME
  
     
     
